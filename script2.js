@@ -1,23 +1,18 @@
 
-var apiKey="6eae682e48e94bbb990a8a75941f9e3e";
-var cuisine=["Chinese", "Mexican", "Italian", "American", "Greek", "Thai"];
-var value=[];
+var $apiKey="399885ef1dffc6fdfd42c5f1a6bdb34c";
+var $appId="b2baeb67";
+var $cuisineBtn=(".")
+var $cuisine=["Chinese", "Mexican", "Italian", "American", "Mediterranean", "Indian"];
 
-function displayRecipes(cuisinestr) {
-    // var recipe=$(this.attr("data-name"))
-    var recipeURL="https://api.spoonacular.com/recipes/complexSearch?cuisine="+cuisinestr + apiKey;
-    console.log(recipeURL);
-        $.ajax({
-            url: recipeURL,
-            method: "GET",
-        }).then(function(response) {
-            var recipeDiv=$("div class='recipes'>")
-        })
-
-    }
-displayRecipes(cuisine[0])
-// function generateRecipes() {
-//     $("#display").on("click", function(){
-
-//     })
-// }
+function getRecipes(cuisine) {
+    console.log(cuisine);
+    var recipeURL="https://api.edamam.com/search?&app_id=" + appId + "app_key=" + apiKey + "&cuisineType=" + cuisine;
+    $.ajax ({
+        url: recipeURL,
+        method: "GET"
+    })
+    .then(function(response) {
+        console.log(response);
+    })
+}
+getRecipes();
