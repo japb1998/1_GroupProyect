@@ -2,11 +2,12 @@
 var apiKey="399885ef1dffc6fdfd42c5f1a6bdb34c";
 var appId="b2baeb67";
 var cuisineBtn=(".")
-var cuisine=["Pasta", "Quick", "Soup", "Pizza", "Vegetable", "Sandwich"];
+// var cuisine=["Pasta", "Quick", "Soup", "Pizza", "Vegetable", "Sandwich"];
 
-function getRecipes() {
+function getRecipes(food) {
+    // $("#recipeDisplay").empty();
     console.log("hungry");
-    var cuisine=$(this).attr("id");
+    var cuisine=$(food).attr("id");
     var recipeURL="https://api.edamam.com/search?q=" + cuisine + "&app_id=" + appId + "&app_key=" + apiKey;
     $.ajax ({
         url: recipeURL,
@@ -23,6 +24,9 @@ function getRecipes() {
 
     }
 
-    $(document).on("click", "button", getRecipes)
-    
+    $(document).on("click", "button", function (e) {
+        $(".name").empty();
+        $(".recipe").empty();
+        getRecipes($(e.target));
+    })
 
