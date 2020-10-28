@@ -27,3 +27,8 @@ overflow: auto;
 .card::-webkit-scrollbar {
     display: none;
   }
+  /* .dropdown-trigger{ display: none;}
+  @media only screen and (max-width: 600px) {
+    .dropdown-trigger{ display: block;
+    margin: 0 auto;}
+  } */

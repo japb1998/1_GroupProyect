@@ -1,3 +1,4 @@
+$(document).ready(function(){
 var movieInput = $('.generate-button');
 var currentUrl = 'https://api.themoviedb.org/3/discover/movie?api_key=81c11b26813d4daaf9110f49a732fd2c&language=en-US&sort_by=popularity.desc&include_video=false&page=1';
 var values;
@@ -101,4 +102,6 @@ $(document).on('change', 'input[name="radio"]', function (e) {
 $(document).on('click', '.movie', function (e) {
     $('#poster').empty();
     displayInfo(e.target);
+})
+$('.sidenav').sidenav();
 })
