@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href= "style.css" rel="stylesheet">
+
 </head>
+
 <body>
+        
+    <nav>
+        <div class="nav-wrapper red accent-4">
+          <a href="#" class="brand-logo">Dinner & Movie</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="badges.html">Movies</a></li>
+            <li><a href="collapsible.html">Recipes</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav>
+        <div class="nav-wrapper red accent-4">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="badges.html">Movies</a></li>
+            <li><a href="collapsible.html">Recipes</a></li>
+          </ul>
+        </div>
+      </nav>
 
     <label for="horror">Horror</label>
     <input type="checkbox" name="genre" id="horror" value="28">
@@ -24,5 +52,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./script.js"></script>
     
+      <ul class="sidenav red accent-4" id="mobile-demo">
+        <li><a href="badges.html">Movies</a></li>
+        <li><a href="collapsible.html">Recipes</a></li>
+      </ul>
+
+        <div class="row">
+            <div class="column">
+              <div class="card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet beatae animi esse molestiae impedit repellat sunt eius dolore aperiam veritatis. Voluptas suscipit placeat nihil. Recusandae culpa reprehenderit amet minima eligendi! </div>
+            </div>
+            <div class="column">
+              <div class="card"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam odit quas id voluptatem aspernatur adipisci pariatur odio tempora minus atque doloribus laudantium aliquid, accusantium modi consectetur deleniti corporis nemo delectus. </div>
+            </div>
+            <div class="column">
+              <div class="card"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet impedit adipisci ducimus! Dolore cum dolores aliquid numquam tenetur rem velit, eaque molestias id ducimus unde maxime iusto voluptate modi quam. </div>
+            </div>
+            <div class="column">
+              <div class="card"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quos distinctio eos beatae aut quibusdam excepturi laborum eveniet suscipit dolorum, error deleniti pariatur iusto consectetur voluptatem nihil, laboriosam ipsam facere. </div>
+            </div>
+          </div>
+          
+          <script type="text/javascript" src="js/materialize.min.js"></script>
+          <script type="text/javascript" src="script.js"></script>
+          <script type="text/javascript" src="script2.js"></script>
+          
+
+          <footer style = "color: white"> 
+            <div class="footer-copyright">
+                <div class="container">
+                © 2020 Copyright Text
+                </div>
+              </div>
+            </footer>
+        
+            <!-- var instance = M.Sidenav.getInstance(elem); -->
+           
+      
 </body>
+
 </html>
