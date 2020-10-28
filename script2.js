@@ -15,6 +15,19 @@ function getRecipes(food) {
     }).then(function(response){
         console.log(response);
         response.hits.forEach(element => {
+
+            var divStyled = $('<div>');
+            divStyled.attr('class','card');
+            var divFood = $('<div>');
+            var divMoreInfo = $('<button>');
+           divMoreInfo.html(`<a href="${element.recipe.url}">More Info</a>`)
+            divFood.text(element.recipe.label);
+            console.log(element);
+            divStyled.append(divFood).append(divMoreInfo);
+            $(".name").append(divStyled);
+            
+            // $(".recipe").append(element.recipe.url);
+
             console.log(element);
             $(".name").append(element.recipe.label);
             $(".recipe").append(element.recipe.url);
@@ -24,6 +37,8 @@ function getRecipes(food) {
 
     }
 
+
+    $(document).on("click", ".food button", function (e) {
     $(document).on("click", "button", function (e) {
         $(".name").empty();
         $(".recipe").empty();

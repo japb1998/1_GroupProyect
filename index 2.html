@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link href="./style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
@@ -12,14 +18,21 @@
         <main class="container">
         <h3>Click on a cuisine to get a list of recipes</h3>
         <div class="row">
+
+                <div class="food col-sm-4">
                 <div class="col-sm-4">
+                  
                     <button type="button" class="btn btn-primary" id="pasta">Pasta</button>
                     <button type="button" class="btn btn-primary" id="quick">Quick</button>
                     <button type="button" class="btn btn-primary" id="soup">Soup</button>
             </div>
         </div>
         <div class="row">
+
+            <div class="food col-sm-4">
+
             <div class="col-sm-4">
+
                 <button type="button" class="btn btn-primary" id="pizza">Pizza</button>
                 <button type="button" class="btn btn-primary" id="vegetable">Vegetable</button>
                 <button type="button" class="btn btn-primary" id="sandwich">Sandwich</button>
@@ -32,6 +45,15 @@
             </div>
         </div>
     </main>
+
+    <footer>
+    <div class="footer-copyright">
+        <div class="container">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./script2.js"></script>
