@@ -1,4 +1,21 @@
 $(document).ready(function(){
+  
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+
+  // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+  // var collapsibleElem = document.querySelector('.collapsible');
+  // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+
+
 var movieInput = $('.generate-button');
 var currentUrl = 'https://api.themoviedb.org/3/discover/movie?api_key=81c11b26813d4daaf9110f49a732fd2c&language=en-US&sort_by=popularity.desc&include_video=false&page=1';
 var values;
@@ -35,6 +52,7 @@ $('#generate').on('click', function () {
         currentUrl += '&with_genres=' + values.join(',')
         console.log(currentUrl);
     }
+
     $.ajax({
         url: currentUrl,
         method: 'GET'
@@ -105,3 +123,10 @@ $(document).on('click', '.movie', function (e) {
 })
 $('.sidenav').sidenav();
 })
+
+    $.ajax({url: currentUrl,
+        method: 'GET'}).then((res)=>{ console.log(res)
+        res.results.forEach(displayMovies);
+        
+        })
+});

@@ -15,6 +15,7 @@ function getRecipes(food) {
     }).then(function(response){
         console.log(response);
         response.hits.forEach(element => {
+
             var divStyled = $('<div>');
             divStyled.attr('class','card');
             var divFood = $('<div>');
@@ -26,13 +27,19 @@ function getRecipes(food) {
             $(".name").append(divStyled);
             
             // $(".recipe").append(element.recipe.url);
+
+            console.log(element);
+            $(".name").append(element.recipe.label);
+            $(".recipe").append(element.recipe.url);
             
         });
     })
 
     }
 
+
     $(document).on("click", ".food button", function (e) {
+    $(document).on("click", "button", function (e) {
         $(".name").empty();
         $(".recipe").empty();
         getRecipes($(e.target));
