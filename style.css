@@ -1,0 +1,29 @@
+html,body{
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+[type="checkbox"]:checked+span:not(.lever):before{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after{
+    border: 2px solid white;
+}
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}  
+#poster img{
+    height: 15rem;
+    width: auto;
+    max-width: 100%;
+}
+.card {
+height: 400px;
+overflow: auto;
+}
+.card::-webkit-scrollbar {
+    display: none;
+  }
