@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Google font families -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  <link href="home.html">
+  <link href="movies.html">
+  <link href="recipes.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <!-- Navbar from materialize -->
+  <nav>
+    <div class="nav-wrapper red accent-4">
+      <a href="#!" class="brand-logo">Dinner and a Movie</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Movies</a></li>
+        <li><a href="index2.html">Recipes</a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul class="sidenav red accent-4" id="mobile-demo">
+    <li><a href="index.html">Movies</a></li>
+    <li><a href="index2.html">Recipes</a></li>
+  </ul>
+
+<!-- Recipe header -->
+  <header>
+    <h1>Recipes</h1>
+  </header>
+
+  <!-- Main body: container for buttons and recipe display -->
+  <main class="container">
+    <p>
+    <h3>Click on a meal type to get a list of recipes</h3>
+    </p>
+    <div class="row food">
+      <div class="food col s8">
+        <!-- <div class="col s4"> -->
+        <button type="button" class="btn btn-primary" id="pasta">Pasta</button>
+        <button type="button" class="btn btn-primary" id="quick">Quick</button>
+        <button type="button" class="btn btn-primary" id="soup">Soup</button>
+        <!-- </div> -->
+        <!-- <div class="food col s4"> -->
+        <button type="button" class="btn btn-primary" id="pizza">Pizza</button>
+        <button type="button" class="btn btn-primary" id="vegetable">Vegetable</button>
+        <button type="button" class="btn btn-primary" id="sandwich">Sandwich</button>
+        <!-- </div> -->
+      </div>
+    </div>
+    <div class="row recipes">
+      <div class="col s12 m9" id="recipeDisplay">
+        <div class="name"></div>
+        <a href="" class="recipe"></a>
+      </div>
+    </div>
+  </main>
+
+<!-- Footer -->
+  <footer>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2020 Copyright
+      </div>
+    </div>
+  </footer>
+
+<!-- script links to materialize, jquery, google fonts and js file -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script2.js"></script>
+
+</body>
+
+</html>
