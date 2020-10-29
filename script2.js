@@ -46,4 +46,4 @@ function getRecipes(food) {
         $(".recipe").empty();
         getRecipes($(e.target));
     })
-
+    })
