@@ -71,7 +71,7 @@ $(document).ready(function () {
 
     function displayInfo(movie) {
         var settings = {
-            url: `http://www.omdbapi.com/?t=${movie}&apikey=9aaffc86`,
+            url: `https://www.omdbapi.com/?t=${movie}&apikey=9aaffc86`,
             method: 'GET'
         }
         $.ajax(settings).then((res) => {
