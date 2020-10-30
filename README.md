@@ -1,9 +1,9 @@
 # D&M (Dinner and a Movie)
-### Pages: 
-### GitHubRepo: 
+### Pages: https://japb1998.github.io/1_GroupProyect/
+### GitHubRepo: https://github.com/japb1998/1_GroupProyect
 
 
-*Welcome to Dinner and a Movie (D&M). Planning a date? Evening with friends? Last minute plans? A person can utilize this app to generate a list of movies to watch and/or meals to make at home.
+*Welcome to Dinner and a Movie (D&M). Planning a date? Evening with friends? Last minute plans? Home alone? A person can utilize this app to generate a list of movies to watch and/or meals to make at home.
 
 ## MVP
 ### Movies
@@ -14,26 +14,25 @@
 ### Meals
 * User clicks button for meal type to generate a list of related recipes
 * Recipes are listed in cards
-* User can click on link in card to go to an external site of for the full recipe
+* User can click on link in card to go to an external site for the full recipe
 
 ## Dinner and a Movie created using:
 * HTML - to create the content of the dashboard. 
 * CSS - for styling
 * Materialize - additional styling and formatting
 * JQuery - create interactions for the user
-* APIs - get movies(The Movie Database) and movie info, get recipes (Edamam) and link to full recipe
-* Google fonts - to get fonts
+* APIs:
+    * The Movie Database - to get movie info
+    * Edamam - get recipe info
+* Google fonts - to get fonts 
 
 ## Features
-### Homepage
-
-
 ### Movies
 * Movie suggestions
    * Movie genres are listed as checkboxes for the user to choose from
    * User will click one or more checkboxes and click the generate button to get a list of movies for that genre
    * Suggested movies will be displayed in cards.
-        a. Each card contains the movie name, poster image and a description.
+        * Each card contains the movie name, poster image and a description.
 
 ### Meals
 * Meal suggestions
@@ -42,7 +41,7 @@
     * User can only choose one meal type at a time
         * If user clicks another meal type, the current list of meals will be removed from the screen and a list from the new meal type will be displayed
     * A card will be displayed for each meal with the meal name and a link to the full recipe
-    * When a user clicks a link they will be taken to an external link in a new tab that will display the recipe details
+    * When a user clicks a link they will be taken to an external site in a new tab that will display the recipe details
 
 
 ### Screenshots
