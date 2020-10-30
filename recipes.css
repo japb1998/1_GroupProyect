@@ -24,3 +24,13 @@ footer{
     bottom: 0;
     text-align: center;
 }  
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
+    color: white;
+}
+.food button{
+    margin-bottom: .2rem;
+    border: .5px black solid;
+}
+.side{
+    color:white;
+}

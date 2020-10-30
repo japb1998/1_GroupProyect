@@ -8,41 +8,36 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600;700&family=Poiret+One&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link href="./style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <nav>
         <div class="nav-wrapper red accent-4">
-            <a href="#!" class="brand-logo">Dinner&Movies</a>
+            <a href="#!" class="brand-logo center">D&M</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="index 2.html">Food</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">Javascript</a></li>
-                <li><a href="mobile.html">Mobile</a></li>
+                <li><a href="movie.html"><i class="material-icons">local_movies</i></a></li>
+        <li><a href="food.html"><i class="material-icons">restaurant_menu</i></a></li>
             </ul>
         </div>
     </nav>
 
     <ul class="sidenav red accent-4" id="mobile-demo">
-        <li><a href="index 2.html">Food</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="movie.html"><span class="side">Movies</span><i class="material-icons">local_movies</i></a></li>
+        <li><a href="food.html"><span class="side">Meals</span><i class="material-icons">restaurant_menu</i></a></li>
     </ul>
 
 
     <!-- <div class="container"> -->
     <div class="row check">
         <div class="check">
-            <div class="col s12 m3 l2">
+            <div class="col s12 m2 l2">
                 <div>
                     <label for="horror">
                         <input type="checkbox" name="genre" id="horror" value="28">
-                        <span>horror</span>
+                        <span>Horror</span>
                     </label>
                 </div>
                 <div>
@@ -74,14 +69,14 @@
                         <input type="checkbox" name="genre" id="romance" value="10749">
                         <span>Romance</span>
                     </label>
-                    <div class="row">
+                    <!-- <div class="row">
                         <label><input class="with-gap" type="radio" name="radio" value="yes"><span>Yes</span></label>
 
                         <label> <input class="with-gap" type="radio" name="radio" value="no"
                                 checked><span>No</span></label>
                         <div class="year-display"></div>
                     </div>
-                </div>
+                </div> -->
                 <div class="generate">
                     <button class="btn  waves-effect waves-light red accent-4" id="generate">Generate <i
                             class="material-icons right">send</i></button>
@@ -89,7 +84,7 @@
             </div>
         </div>
 
-        <div class="col s12 m9">
+        <div class="poster-display col s12 m9">
             <div class="container" id="poster"></div>
         </div>
 
@@ -106,8 +101,7 @@
     <footer class="grey darken-3">
         <div class="footer-copyright">
             <div class="container">
-                © 2014 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                © 2020 Group-2 LLC
             </div>
         </div>
     </footer>

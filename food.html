@@ -21,63 +21,63 @@
   <!-- Navbar from materialize -->
   <nav>
     <div class="nav-wrapper red accent-4">
-      <a href="#!" class="brand-logo">Dinner and a Movie</a>
+      <a href="#!" class="brand-logo center">D&M</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="index.html">Movies</a></li>
-        <li><a href="index2.html">Recipes</a></li>
+        
+        <li><a href="movie.html"><i class="material-icons">local_movies</i></a></li>
+        <li><a href="food.html"><i class="material-icons">restaurant_menu</i></a></li>
       </ul>
     </div>
   </nav>
   <ul class="sidenav red accent-4" id="mobile-demo">
-    <li><a href="index.html">Movies</a></li>
-    <li><a href="index2.html">Recipes</a></li>
+    <li><a href="movie.html"><span class="side">Movies</span><i class="material-icons">local_movies</i></a></li>
+        <li><a href="food.html"><span class="side">Meals</span><i class="material-icons">restaurant_menu</i></a></li>
   </ul>
 
 <!-- Recipe header -->
   <header>
-    <h1>Recipes</h1>
+    <h3>Recipes<i class="material-icons">restaurant </i></h3>
   </header>
 
   <!-- Main body: container for buttons and recipe display -->
   <main class="container">
     <p>
-    <h3>Click on a meal type to get a list of recipes</h3>
+    <h5>Click on a meal type to get a list of recipes</h5>
     </p>
     <div class="row food">
-      <div class="food col s8">
+      <div class="food">
         <!-- <div class="col s4"> -->
-        <button type="button" class="btn btn-primary" id="pasta">Pasta</button>
-        <button type="button" class="btn btn-primary" id="quick">Quick</button>
-        <button type="button" class="btn btn-primary" id="soup">Soup</button>
+        <button type="button" class="col s12 m2 lg2 btn btn-primary red accent-4" id="pasta">Pasta</button>
+        <button type="button" class=" col s12 m2 lg2 btn btn-primary red accent-4" id="quick">Quick</button>
+        <button type="button" class="col s12 m2 lg2 btn btn-primary red accent-4" id="soup">Soup</button>
         <!-- </div> -->
         <!-- <div class="food col s4"> -->
-        <button type="button" class="btn btn-primary" id="pizza">Pizza</button>
-        <button type="button" class="btn btn-primary" id="vegetable">Vegetable</button>
-        <button type="button" class="btn btn-primary" id="sandwich">Sandwich</button>
+        <button type="button" class="col s12 m2 lg2 btn btn-primary red accent-4" id="pizza">Pizza</button>
+        <button type="button" class="col s12 m2 lg2 btn btn-primary red accent-4" id="vegetable">Vegetable</button>
+        <button type="button" class="col s12 m2 lg2 btn btn-primary red accent-4" id="sandwich">Sandwich</button>
         <!-- </div> -->
       </div>
     </div>
     <div class="row recipes">
       <div class="col s12 m9" id="recipeDisplay">
         <div class="name"></div>
-        <a href="" class="recipe"></a>
+        <!-- <a href="" class="recipe"></a> -->
       </div>
     </div>
   </main>
 
 <!-- Footer -->
-  <footer>
-    <div class="footer-copyright">
+<footer class="grey darken-3">
+  <div class="footer-copyright">
       <div class="container">
-        © 2020 Copyright
+          © 2020 Copyright Group-2 LLC
       </div>
-    </div>
-  </footer>
-
+  </div>
+</footer>
 <!-- script links to materialize, jquery, google fonts and js file -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="script2.js"></script>
 
 </body>
