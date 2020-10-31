@@ -43,14 +43,30 @@
     * A card will be displayed for each meal with the meal name and a link to the full recipe
     * When a user clicks a link they will be taken to an external site in a new tab that will display the recipe details
 
+### Future Versions for updates and enhancements
+* Add new APIs/Features
+    * Music, Sports, Recreation, I Feel Lucky (randomly generated)
+    * Add additional filtering options
+    * View More (display more results)
+
+* Styling
+    * Add help text
+    * Updated aesthetic
+    * Create home page
+    * Meet accessibility standards
+
 
 ### Screenshots
 
-![PageLoadNoHistory](assets/PageLoadNoHistory.png)
-![SearchAndDisplay](assets/SearchAndDisplay.png)
-![BuildingSearchHistory](assets/BuildingSearchHistory.png)
-![ChooseCityInHistory](assets/ChooseCityInHistory.png)
-![PageLoadWithHistory](assets/PageLoadWithHistory.png)
-
+![Movies Search](assets/MoviesSearch.png)
+![Movies Generated](assets/MoviesGenerated.png)
+![Recipes Search](assets/RecipesSearch.png)
+![Recipes Generated](assets/RecipesGenerated.png)
+![Mobile Movies Search](assets/MobileMoviesSearch.png)
+![Mobile Movies Generated](assets/MobileMoviesGenerated.png)
+![Mobile Recipes Search](assets/MobileRecipesSearch.png)
+![Mobile Recipes Generated](assets/MobileRecipesGenerated.png)
+![Mobile Menu](assets/MobileMenu.png)
+![Recipes New Tab](assets/RecipesNewTab.png)
 
 
